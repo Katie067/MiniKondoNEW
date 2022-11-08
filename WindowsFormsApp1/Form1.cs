@@ -17,13 +17,16 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             notifyIcon1.Icon = SystemIcons.Application;
+
         }
 
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            pictureBox1.Visible = !pictureBox1.Visible;
+            Kondo.Left += 1;
         }
+
+
 
         private void notifyIcon1_Click(object sender, EventArgs e)
         {
